@@ -1,0 +1,13 @@
+Dataset raw_ecommerce {
+  label: 'Raw ne Ecommerce'
+  description: '''
+    Explore ecommerce
+  '''
+	owner: 'khai@holistics.io'
+  
+  data_source_name: 'demodb'
+
+  models: []
+
+  relationships:[]
+}

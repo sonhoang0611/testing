@@ -1,0 +1,50 @@
+import './users.model.aml' { users }
+
+Func ref(model_name: String, field_name: String) {
+  FieldRef { model: model_name, field: field_name }
+}
+
+Relationship rel_a {
+  type: 'many_to_one'
+  from: ref('orders', 'user_id')
+  to: ref('users', 'id')
+}
+
+Model orders {
+  type: 'table'
+  label: "Orders"
+  table_name: '"ecommerce"."orders"'
+  data_source_name: 'demodb'
+  description: "orders model description huehue"
+
+  dimension id {
+    label: 'Id'
+    type: 'number'
+  }
+
+  dimension status {
+    label: 'Status'
+    type: 'text'
+  }
+
+  dimension created_at {
+    label: 'Created At'
+    type: 'datetime'
+  }
+
+  dimension user_id {
+    label: 'User Id'
+    type: 'number'
+  }
+
+  dimension discount {
+    label: 'Discount'
+    type: 'number'
+  }
+
+  dimension delivery_attempts {
+    label: 'Delivery Attempts'
+    type: 'number'
+  }
+  
+}
