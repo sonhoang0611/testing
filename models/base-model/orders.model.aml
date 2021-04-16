@@ -1,8 +1,5 @@
 import './users.model.aml' { users }
 
-Func ref(model_name: String, field_name: String) {
-  FieldRef { model: model_name, field: field_name }
-}
 
 Relationship rel_a {
   type: 'many_to_one'
