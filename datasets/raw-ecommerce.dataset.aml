@@ -7,10 +7,6 @@ import '../models/base-model/categories.model.aml' { categories }
 import '../models/base-model/cities.model.aml' {cities}
 import '../models/base-model/countries.model.aml' {countries}
 
-Func ref(model_name: String, field_name: String) {
-  FieldRef { model: model_name, field: field_name }
-}
-
 Dataset raw_ecommerce {
   label: 'Raw Ecommerce'
   description: '''
