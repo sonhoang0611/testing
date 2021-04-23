@@ -18,13 +18,13 @@ Dataset raw_ecommerce {
 
   models: [
     users,
-    orders,
-    order_items,
-    products,
-    merchants,
-    categories,
-    cities,
-    countries
+    orders
+    // order_items,
+    // products,
+    // merchants,
+    // categories,
+    // cities,
+    // countries
   ]
 
 relationships: [
