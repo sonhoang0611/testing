@@ -8,7 +8,7 @@ import '../models/base-model/cities.model.aml' {cities}
 import '../models/base-model/countries.model.aml' {countries}
 
 Dataset raw_ecommerce {
-  label: 'Raw Ecommerce1123'
+  label: 'Raw Ecommerce'
   description: '''
     This Dataset is about Ecommerce data nha
   '''
