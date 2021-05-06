@@ -1,11 +1,18 @@
 import '../models/base-model/users.model.aml' { users }
-import '../models/base-model/orders.model.aml' { orders, rel_a } 
+import '../models/base-model/orders.model.aml' { orders } 
 import '../models/base-model/order_items.model.aml' { order_items }
 import '../models/base-model/products.model.aml' { products }
 import '../models/base-model/merchants.model.aml' { merchants }
 import '../models/base-model/categories.model.aml' { categories }
 import '../models/base-model/cities.model.aml' {cities}
 import '../models/base-model/countries.model.aml' {countries}
+
+
+Relationship rel_a {
+  type: 'many_to_one'
+  from: ref('orders', 'user_id')
+  to: ref('users', 'id')
+}
 
 Dataset raw_ecommerce {
   label: 'Raw Ecommerce'
