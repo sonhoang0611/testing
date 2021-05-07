@@ -15,7 +15,7 @@ Relationship rel_a {
 }
 
 Dataset raw_ecommerce {
-  label: 'Raw Ecommerce2'
+  label: 'Raw Ecommerce1'
   description: '''
     This Dataset is about Ecommerce data nha
   '''
