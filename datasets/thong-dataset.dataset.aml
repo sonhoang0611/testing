@@ -12,7 +12,7 @@ Dataset thong_dataset {
     cities,
     countries
   ]
-  relationships {
+  relationships: [
      RelationshipConfig {
       rel: Relationship { 
         type: 'many_to_one'
@@ -22,5 +22,5 @@ Dataset thong_dataset {
       active: true
       direction: 'two_way'
     }
-  }
+  ]
 }
