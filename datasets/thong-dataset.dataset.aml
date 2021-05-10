@@ -1,5 +1,13 @@
 Dataset thong-dataset {
   label: "Thong Test Dataset"
+  description: "Short Descritpion"
+  data_source_name: 'demodb'
+  
+  models: [
+    users,
+    cities,
+    countries
+  ]
 }
 
 
@@ -15,31 +23,7 @@ import '../models/base-model/cities.model.aml' {cities}
 import '../models/base-model/countries.model.aml' {countries}
 
 
-Relationship rel_a {
-  type: 'many_to_one'
-  from: ref('orders', 'user_id')
-  to: ref('users', 'id')
-}
 
-Dataset raw_ecommerce {
-  label: 'Raw Ecommerce'
-  description: '''
-    This Dataset is about Ecommerce data nha
-  '''
-	owner: 'khai@holistics.io'
-  
-  data_source_name: 'demodb'
-
-  models: [
-    users,
-    orders,
-    order_items,
-    products,
-    merchants,
-    categories,
-    cities,
-    countries
-  ]
 
 relationships: [
 
