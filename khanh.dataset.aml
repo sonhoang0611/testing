@@ -6,7 +6,13 @@ import '../models/base-model/merchants.model.aml' { merchants }
 import '../models/base-model/categories.model.aml' { categories }
 import '../models/base-model/cities.model.aml' {cities}
 import '../models/base-model/countries.model.aml' {countries}
-import './rels.aml' { rel_a }
+// import './rels.aml' { rel_a }
+
+Relationship rel_a {
+  type: 'many_to_one'
+  from: ref('orders', 'user_id')
+  to: ref('users', 'id')
+}
 
 
 Dataset raw_ecommerce {
