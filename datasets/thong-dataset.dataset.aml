@@ -19,8 +19,6 @@ Dataset thong_dataset {
         from: ref('users','city_id')
         to: ref('cities','id') 
       }
-      active: true
-      direction: 'two_way'
     }
   ]
 }
