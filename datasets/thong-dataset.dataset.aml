@@ -23,8 +23,8 @@ Dataset thong_dataset {
     RelationshipConfig {
       rel: Relationship { 
         type: 'many_to_one'
-        from: ref('cities','code')
-        to: ref('countries','id') 
+        from: ref('cities','country_code')
+        to: ref('countries','code') 
       }
     }
   ]
