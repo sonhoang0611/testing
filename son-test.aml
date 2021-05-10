@@ -3,7 +3,7 @@ Dataset raw_ecommerce {
   description: '''
     Explore ecommerce
   '''
-	owner: 'khai@holistics.io'
+	owner: 'son.hoang@holistics.io'
   
   data_source_name: 'demodb'
 
