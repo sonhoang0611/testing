@@ -12,4 +12,7 @@ Dataset thong_dataset {
     cities,
     countries
   ]
+  relationships {
+    
+  }
 }
