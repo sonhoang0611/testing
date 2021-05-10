@@ -21,7 +21,7 @@ Dataset raw_ecommerce {
   '''
 	owner: 'khai@holistics.io'
   
-  data_source_name: 'demodb2'
+  data_source_name: 'demodb'
 
   models: [
     users,
