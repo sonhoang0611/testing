@@ -6,7 +6,7 @@ import '../models/base-model/merchants.model.aml' { merchants }
 import '../models/base-model/categories.model.aml' { categories }
 import '../models/base-model/cities.model.aml' {cities}
 import '../models/base-model/countries.model.aml' {countries}
-import './datasets/raw-ecommerce.dataset.aml' { rel_a }
+import './rels.aml' { rel_a }
 
 
 Dataset raw_ecommerce {
