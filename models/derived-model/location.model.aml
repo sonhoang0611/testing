@@ -8,7 +8,7 @@ Model location {
   label: 'Location'
   data_source_name: 'demodb'
     
-// models: [cities, countries]
+models: [cities, countries]
   
   query: @sql 
     select {{ #ci.id }} as city_id
