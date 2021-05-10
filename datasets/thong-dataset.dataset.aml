@@ -13,6 +13,14 @@ Dataset thong_dataset {
     countries
   ]
   relationships {
-    
+     RelationshipConfig {
+      rel: Relationship { 
+        type: 'many_to_one'
+        from: ref('users','city_id')
+        to: ref('cities','id') 
+      }
+      active: true
+      direction: 'two_way'
+    }
   }
 }
