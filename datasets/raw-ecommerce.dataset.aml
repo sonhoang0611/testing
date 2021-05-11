@@ -1,5 +1,5 @@
 import '../models/base-model/users.model.aml' { users }
-import '../models/base-model/orders.model.aml' { orders } 
+import '../models/base-model/orders.model.aml' { orders, rel_a } 
 import '../models/base-model/order_items.model.aml' { order_items }
 import '../models/base-model/products.model.aml' { products }
 import '../models/base-model/merchants.model.aml' { merchants }
