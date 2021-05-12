@@ -1,4 +1,4 @@
-Model products {
+TableModel products {
   type: 'table'
   label: 'Products'
   table_name: '"ecommerce"."products"'
