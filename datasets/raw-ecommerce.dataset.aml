@@ -27,7 +27,7 @@ Dataset raw_ecommerce {
     countries
   ]
 
-relationships: [
+  relationships: [
 
   RelationshipConfig {
     rel: Relationship { 
