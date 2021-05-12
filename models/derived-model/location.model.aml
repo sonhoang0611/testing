@@ -1,6 +1,6 @@
 import '../base-model/cities.model.aml' {cities}
 import '../base-model/countries.model.aml' {countries}
-QueryModel location {
+Model location {
   type: 'query'
   label: 'Location'
   data_source_name: 'demodb'
