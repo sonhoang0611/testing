@@ -1,4 +1,4 @@
-Model order_items {
+TableModel order_items {
   type: 'table'
   label: 'Order Items'
   table_name: '"ecommerce"."order_items"'
