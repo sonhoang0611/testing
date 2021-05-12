@@ -7,7 +7,6 @@ import '../models/base-model/categories.model.aml' { categories }
 import '../models/base-model/cities.model.aml' {cities}
 import '../models/base-model/countries.model.aml' {countries}
 
-
 Dataset raw_ecommerce {
   label: 'Raw Ecommerce'
   description: '''
@@ -74,7 +73,7 @@ relationships: [
     }
     active: true
     direction: 'two_way'
-    filter_direction: 'one_to_many'
+    //filter_direction: 'one_to_many'
   },
 
   RelationshipConfig {
