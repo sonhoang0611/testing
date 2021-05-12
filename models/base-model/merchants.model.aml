@@ -1,4 +1,4 @@
-Model merchants {
+TableModel merchants {
   type: 'table'
   label: 'Merchants'
   table_name: '"ecommerce"."merchants"'
