@@ -73,7 +73,7 @@ relationships: [
     }
     active: true
     direction: 'two_way'
-    //filter_direction: 'one_to_many'
+    filter_direction: 'one_to_many'
   },
 
   RelationshipConfig {
