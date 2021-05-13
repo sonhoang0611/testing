@@ -64,16 +64,16 @@ Dataset raw_ecommerce {
       direction: 'two_way'
     },
 
-    RelationshipConfig {
-      rel: Relationship {
-        type: 'many_to_one'
-        from: ref('users','city_id')
-        to: ref('cities','id')
-      }
-      active: true
-      direction: 'two_way'
-      filter_direction: 'one_to_many'
-    },
+    // RelationshipConfig {
+    //   rel: Relationship {
+    //     type: 'many_to_one'
+    //     from: ref('users','city_id')
+    //     to: ref('cities','id')
+    //   }
+    //   active: true
+    //   direction: 'two_way'
+    //   filter_direction: 'one_to_many'
+    // }
 
     RelationshipConfig {
       rel: Relationship {
