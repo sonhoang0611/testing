@@ -3,7 +3,7 @@ import '../models/base-model/cities.model.aml' {cities}
 import '../models/base-model/countries.model.aml' {countries}
 
 Dataset general_dataset {
-  label: "Thong Test Dataset"
+  label: "General Dataset"
   description: "Short Descritpion"
   data_source_name: 'demodb'
   
