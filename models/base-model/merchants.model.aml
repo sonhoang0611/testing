@@ -16,7 +16,7 @@ TableModel merchants {
 
   dimension city_id {
     label: 'City Id'
-    type: 'numbaer'a
+    type: 'number'a
   }
 
   dimension admin_id {
