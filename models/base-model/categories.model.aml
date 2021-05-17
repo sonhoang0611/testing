@@ -1,4 +1,4 @@
-TableModel categoriess {
+TableModel categories {
   type: 'table'
   label: 'Categories'
   table_name: '"ecommerce"."categories"'
