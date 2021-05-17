@@ -5,7 +5,7 @@ Dataset raw_ecommerce {
   description: '''
     This Dataset is about Ecommerce data
   '''
-	owner: 'khai@holistics.io'
+	owner: 'ahihi@holistics.io'
 
   data_source_name: 'demodb'
 
