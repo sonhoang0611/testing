@@ -57,6 +57,7 @@ Model users {
     label: 'Total Users'
     type: 'number'
     definition: @sql count({{#SOURCE.id}});;
+    aggregation_type: 'custom'
   }
 
 }
