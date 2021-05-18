@@ -13,7 +13,7 @@ Dataset raw_ecommerce {
     This Dataset is about Ecommerce data
   '''
 	owner: 'khai@holistics.io'
-  
+
   data_source_name: 'demodb'
 
   models: [
@@ -28,73 +28,71 @@ Dataset raw_ecommerce {
   ]
 
   relationships: [
-  RelationshipConfig {
-    rel: Relationship { 
-      type: 'many_to_one'
-      from: ref('order_items','order_id')
-      to: ref('orders','id') 
-    }
-    active: true
-    direction: 'two_way'
-  },
+    RelationshipConfig {
+      rel: Relationship { 
+        type: 'many_to_one'
+        from: ref('order_items','order_id')
+        to: ref('orders','id') 
+      }
+      active: true
+      direction: 'two_way'
+    },
 
-  RelationshipConfig {
-    rel: rel_a
-    active: true
-    direction: 'two_way'
-  },
+    RelationshipConfig {
+      rel: rel_a
+      active: true
+      direction: 'two_way'
+    },
 
-  RelationshipConfig {
-    rel: Relationship { 
-      type: 'many_to_one'
-      from: ref('order_items','product_id')
-      to: ref('products','id') 
-    }
-    active: true
-    direction: 'two_way'
-  },
+    RelationshipConfig {
+      rel: Relationship { 
+        type: 'many_to_one'
+        from: ref('order_items','product_id')
+        to: ref('products','id') 
+      }
+      active: true
+      direction: 'two_way'
+    },
 
-  RelationshipConfig {
-    rel: Relationship { 
-      type: 'many_to_one'
-      from: ref('products','merchant_id')
-      to: ref('merchants','id') 
-    }
-    active: true
-    direction: 'two_way'
-  },
+    RelationshipConfig {
+      rel: Relationship { 
+        type: 'many_to_one'
+        from: ref('products','merchant_id')
+        to: ref('merchants','id') 
+      }
+      active: true
+      direction: 'two_way'
+    },
 
-  RelationshipConfig {
-    rel: Relationship {
-      type: 'many_to_one'
-      from: ref('users','city_id')
-      to: ref('cities','id')
-    }
-    active: true
-    direction: 'two_way'
-    filter_direction: 'one_to_many'
-  },
+    RelationshipConfig {
+      rel: Relationship {
+        type: 'many_to_one'
+        from: ref('users','city_id')
+        to: ref('cities','id')
+      }
+      active: true
+      direction: 'two_way'
+      // filter_direction: 'one_to_many'
+    },
 
-  RelationshipConfig {
-    rel: Relationship {
-      type: 'many_to_one'
-      from: ref('merchants','city_id')
-      to: ref('cities','id')
-    }
-    active: false
-    direction: 'two_way'
-  },
+    RelationshipConfig {
+      rel: Relationship {
+        type: 'many_to_one'
+        from: ref('merchants','city_id')
+        to: ref('cities','id')
+      }
+      active: false
+      direction: 'two_way'
+    },
 
-  RelationshipConfig {
-    rel: Relationship {
-      type: 'many_to_one'
-      from: ref('cities','country_code')
-      to: ref('countries','code')
-    }
-    active: true
-    direction: 'two_way'
-  }
-  
-]
-
+    RelationshipConfig {
+      rel: Relationship {
+        type: 'many_to_one'
+        from: ref('cities','country_code')
+        to: ref('countries','code')
+      }
+      active: true
+      direction: 'two_way'
+    } 
+  ]
 }
