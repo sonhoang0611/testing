@@ -10,7 +10,7 @@ import '../models/base-model/countries.model.aml' { countries }
 Dataset raw_ecommerce {
   label: 'Raw Ecommerce'
   description: '''
-    This Dataset is about Ecommerce data nha
+    This Dataset is about Ecommerce data
   '''
 	owner: 'khai@holistics.io'
 
