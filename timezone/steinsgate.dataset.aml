@@ -1,0 +1,13 @@
+import './steinsgate.model.aml' {
+  public_steinsgate as model__public_steinsgate
+}
+Dataset steinsgate {
+  label: 'steinsgate'
+  description: ''
+  data_source_name: 'demodb'
+  models: [
+    model__public_steinsgate
+  ]
+  relationships: []
+  owner: 'huy.vu@holistics.io'
+}
