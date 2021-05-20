@@ -1,0 +1,30 @@
+Model public_steinsgate {
+  type: 'table'
+  label: 'Steinsgate'
+  table_name: '"public"."steinsgate"',
+  data_source_name: 'demodb',
+  dimension ts {
+    label: 'Ts'
+    type: 'datetime'
+    definition: @sql {{ #SOURCE.ts }};;
+    hidden: false
+  }
+  dimension value {
+    label: 'Value'
+    type: 'number'
+    definition: @sql {{ #SOURCE.value }};;
+    hidden: false
+  }
+  dimension tsz {
+    label: 'Tsz'
+    type: 'datetime'
+    definition: @sql {{ #SOURCE.tsz }};;
+    hidden: false
+  }
+  dimension d {
+    label: 'Date'
+    type: 'date'
+    definition: @sql {{ #SOURCE.d }};;
+    hidden: false
+  }
+}
