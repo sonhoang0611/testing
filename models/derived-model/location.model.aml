@@ -45,9 +45,9 @@ Model location {
 
 
 
-  dimension continent_name {
-    label: 'Continent Name'
-    type: 'text'
-  }
+  // dimension continent_name {
+  //   label: 'Continent Name'
+  //   type: 'text'
+  // }
 
 }
