@@ -3,6 +3,8 @@ import '../base-model/countries.model.aml' {countries}
 QueryModel location {
   type: 'query'
   label: 'Location'
+  owner: "khai@holistics.io"
+  description: ""
   data_source_name: 'demodb'
     
 models: [cities, countries]
@@ -39,7 +41,5 @@ from {{ #cities as ci }}
     label: 'Continent Name'
     type: 'text'
   }
-  owner: ""
-  description: ""
 
 }
