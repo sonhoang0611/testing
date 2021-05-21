@@ -20,7 +20,8 @@ Model location {
                   , {{ #co.code }} as country_code
                   , {{ #co.name }} as country_name
                 from {{ #cities as ci }}
-                  left join {{ #countries as co }} on {{ #co.code }} = {{ #ci.country_code }} ;;
+                  left join {{ #countries as co }} on {{ #co.code }} = {{ #ci.country_code }} 
+            ;;
 
 
   dimension city_id {
