@@ -5,7 +5,7 @@ Model users {
   description: ""
   owner: 'khai@holistics.io'
   table_name: '"ecommerce"."users"'
-  data_source_name: 'demodb'
+  //data_source_name: 'demodb'
   
   dimension id {
     label: 'Id'
