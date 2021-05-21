@@ -15,7 +15,7 @@ Dataset general_dataset {
   relationships: [
     RelationshipConfig {
       rel: Relationship { 
-        type: 'many_to_one'
+        type: 'many_to_one'sa
         from: ref('users','city_id')
         to: ref('cities','id') 
       }
