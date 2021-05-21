@@ -14,10 +14,9 @@ Model location {
 
   models: [cities, countries]
   
-  query: @sql    
-    select {{ #ci.id }} as city_id
-      , {{ #ci.name }} as city_name
-      , {{ #co.code }} as country_code
+  query: @sql    select {{ #ci.id }} as city_id
+                  , {{ #ci.name }} as city_name
+                  , {{ #co.code }} as country_code
                   , {{ #co.name }} as country_name
                 from {{ #cities as ci }}
                   left join {{ #countries as co }} on {{ #co.code }} = {{ #ci.country_code }} ;;
