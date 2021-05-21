@@ -1,21 +1,27 @@
 import '../base-model/cities.model.aml' {cities}
 import '../base-model/countries.model.aml' {countries}
-QueryModel location {
+
+
+Model location {
+
+  
   type: 'query'
   label: 'Location'
   owner: "khai@holistics.io"
   description: ""
   data_source_name: 'demodb'
-    
-models: [cities, countries]
+
+
+  models: [cities, countries]
   
-  query: @sql    select {{ #ci.id }} as city_id
-    , {{ #ci.name }} as city_name
-    , {{ #co.code }} as country_code
-    , {{ #co.name }} as country_name
-    , {{ #co.continent_name }}
-from {{ #cities as ci }}
-  left join {{ #countries as co }} on {{ #co.code }} = {{ #ci.country_code }} ;;
+  query: @sql    
+    select {{ #ci.id }} as city_id
+      , {{ #ci.name }} as city_name
+      , {{ #co.code }} as country_code
+                  , {{ #co.name }} as country_name
+                from {{ #cities as ci }}
+                  left join {{ #countries as co }} on {{ #co.code }} = {{ #ci.country_code }} ;;
+
 
   dimension city_id {
     label: 'City Id'
@@ -36,6 +42,9 @@ from {{ #cities as ci }}
     label: 'Country Name'
     type: 'text'
   }
+
+
+
 
   dimension continent_name {
     label: 'Continent Name'
