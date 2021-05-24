@@ -7,13 +7,4 @@ Dataset general_dataset {
   label: "General Dataset"
   description: "Short Descritpion"
 
-  data_source_name: 'demodb'
-
-  models: [
-    users,
-    cities,
-    countries
-  ]
-
-  relationships: [ 
 }
