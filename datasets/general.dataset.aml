@@ -4,19 +4,18 @@ import '../models/base-model/countries.model.aml' {countries}
 
 
 Dataset general_dataset {
-  
   label: "General Dataset"
   description: "Short Descritpion"
 
   data_source_name: 'demodb'
-  
+
   models: [
     users,
     cities,
     countries
   ]
 
-  relationships: [
+  relationships: [ 
     RelationshipConfig {
       rel: Relationship { 
         type: 'many_to_one'
