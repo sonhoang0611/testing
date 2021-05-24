@@ -10,7 +10,6 @@ Dataset general_dataset {
 
   data_source_name: 'demodb'
   
-
   models: [
     users,
     cities,
