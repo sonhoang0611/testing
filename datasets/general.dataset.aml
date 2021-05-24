@@ -16,7 +16,6 @@ Dataset general_dataset {
     countries
   ]
 
-  
   relationships: [
     RelationshipConfig {
       rel: Relationship { 
