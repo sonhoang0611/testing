@@ -4,14 +4,10 @@ import '../models/base-model/countries.model.aml' {countries}
 
 
 Dataset general_dataset {
-
-  
   label: "General Dataset"
   description: "Short Descritpion"
 
-
   data_source_name: 'demodb'
-  
 
   models: [
     users,
@@ -19,7 +15,6 @@ Dataset general_dataset {
     countries
   ]
 
-  
   relationships: [
     RelationshipConfig {
       rel: Relationship { 
