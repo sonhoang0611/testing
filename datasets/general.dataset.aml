@@ -22,7 +22,7 @@ Dataset general_dataset {
         from: ref('users','city_id')
         to: ref('cities','id')
       }
-      active: true
+      active: false
       direction: 'two_way'
     },
     RelationshipConfig {
