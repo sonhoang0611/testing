@@ -27,7 +27,7 @@ Dataset general_dataset {
     },
     RelationshipConfig {
       rel: Relationship { 
-        type: 'one_to_one'
+        type: 'many_to_one'
         from: ref('cities','country_code')
         to: ref('countries','code') 
       }
