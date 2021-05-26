@@ -13,7 +13,7 @@ Model users {
   }
 
   dimension sign_up_at {
-    label: 'Sign Up At'
+    label: 'Sign Up At 1'
     type: 'datetime'
   }
 
