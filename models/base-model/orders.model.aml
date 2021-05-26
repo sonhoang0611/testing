@@ -34,7 +34,7 @@ Model orders {
 
   dimension delivery_attempts {
     label: 'Delivery Attempts'
-    type: 'number'
+    type: 'number'wkejbnfkwjebf
   }
   
 }
