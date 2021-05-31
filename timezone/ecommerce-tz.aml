@@ -91,7 +91,7 @@ Dataset raw_ecommerce {
         from: ref('cities','country_code')
         to: ref('countries','code')
       }
-      active: tru
+      active: true
       direction: 'two_way'
     } 
   ]
