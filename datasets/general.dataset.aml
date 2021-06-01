@@ -1,5 +1,6 @@
 import '../models/base-model/users.model.aml' { users }
 import '../models/base-model/cities.model.aml' { cities }
+import '../models/base-model/countries.model.aml' { countries }
 
 Dataset general_dataset {
   label: "General Dataset"
@@ -10,6 +11,7 @@ Dataset general_dataset {
   models: [
     users,
     cities,
+    countries
   ]
 
   relationships: [ 
@@ -19,7 +21,16 @@ Dataset general_dataset {
         from: ref('users','city_id')
         to: ref('cities','id')
       }
-      active: false
+      active: true
+      direction: 'two_way'
+    },
+    RelationshipConfig {
+      rel: Relationship {
+        type: 'many_to_one'
+        from: ref('cities', 'country_code')
+        to: ref('countries', 'code')
+      }
+      active: true
       direction: 'two_way'
     }
   ]
