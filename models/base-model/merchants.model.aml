@@ -11,7 +11,7 @@ TableModel merchants {
 
   dimension name {
     label: 'Merchant Name'
-    type: 'text'
+    type: 'number'
   }
 
   dimension city_id {
