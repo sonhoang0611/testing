@@ -1,4 +1,4 @@
-TableModel countries {
+Model countries {
   type: 'table'
   label: 'Countries'
   table_name: '"ecommerce"."countries"'
@@ -18,5 +18,4 @@ TableModel countries {
     label: 'Continent Name'
     type: 'text'
   }
-  
 }
