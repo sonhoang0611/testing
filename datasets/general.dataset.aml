@@ -6,7 +6,7 @@ Dataset general_dataset {
   label: "General Dataset"
   description: "Short Descritpion"
 
-  data_source_name: 'demodb'
+  data_source_name: 'Postgre_Demo'
 
   models: [
     users,
