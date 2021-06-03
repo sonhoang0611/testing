@@ -1,0 +1,18 @@
+import '../models/base-model/users.model.aml' { users }
+import '../models/base-model/cities.model.aml' { cities }
+import '../models/base-model/countries.model.aml' { countries }
+
+Dataset general_dataset {
+  label: "General Dataset"
+  description: "Short Descritpion"
+
+  data_source_name: 'demodb'
+
+  models: [
+
+  ]
+
+  relationships: [ 
+   
+  ]
+}
