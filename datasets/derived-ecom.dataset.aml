@@ -1,0 +1,27 @@
+import '../models/base-model/users.model.aml' { users }
+import '../models/base-model/orders.model.aml' { orders } 
+
+Dataset raw_ecommerce {
+  label: 'Raw Ecommerce'
+  description: "This Dataset is about Ecommerce data nha"
+	owner: 'khai@holistics.io'
+  
+  data_source_name: 'demodb'
+
+  models: [
+    users,
+    orders
+  ]
+
+relationships: [
+  RelationshipConfig {
+      rel: Relationship { 
+        type: 'many_to_one'
+        from: ref('orders','user_id')
+        to: ref('users','id') 
+      }
+      active: true
+      direction: 'two_way'
+    }
+]
+}
