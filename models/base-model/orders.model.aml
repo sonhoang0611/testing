@@ -6,7 +6,6 @@ Model orders {
   table_name: '"ecommerce"."orders"'
   data_source_name: 'demodb'
   description: "orders model description"
-  models: [users]
 
   dimension id {
     label: 'Id'
