@@ -1,7 +1,7 @@
 TableModel products {
   type: 'table'
   label: 'Products'
-  table_name: '"ecommerce"."products"'
+  table_name: 'ecommerce.products'
   data_source_name: 'demodb'
 
   dimension id {
