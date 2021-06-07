@@ -44,3 +44,5 @@ Relationship rel_a {
   from: ref('orders', 'user_id')
   to: ref('users', 'id')
 }
+
+models: [users]
