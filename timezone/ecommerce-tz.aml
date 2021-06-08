@@ -17,7 +17,7 @@ Dataset raw_ecommerce {
   data_source_name: 'demodb'
 
   models: [
-    // users,
+    users,
     orders,
     order_items,
     products,
