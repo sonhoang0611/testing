@@ -8,7 +8,7 @@ import '../models/base-model/cities.model.aml' { cities }
 import '../models/base-model/countries.model.aml' { countries }
 
 Dataset son_test {
-  label: 'Raw Ecommerce'
+  label: 'Son test raw'
   description: "Dataset desc"
 	owner: 'khai@holistics.io'
 
