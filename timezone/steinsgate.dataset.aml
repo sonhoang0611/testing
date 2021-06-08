@@ -10,7 +10,7 @@ Dataset steinsgate {
   ]
   relationships: []
   owner: 'huy.vu@holistics.io'
-}
+} 
 
 // Raw data for reference
 // 
