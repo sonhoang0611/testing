@@ -14,6 +14,6 @@ Dataset raw_ecommerce {
   ]
 
   relationships: [
-    rel(orders.user_id > users.id, true, 'two_way')
+    rel(orders.user_id - users.id, true, 'two_way')
   ]
 }
