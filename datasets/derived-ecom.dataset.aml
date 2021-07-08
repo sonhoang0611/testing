@@ -14,15 +14,6 @@ Dataset raw_ecommerce {
   ]
 
 relationships: [
-  // RelationshipConfig {
-  //     rel: Relationship { 
-  //       type: 'many_to_one'
-  //       from: ref('orders','user_id')
-  //       to: ref('users','id') 
-  //     }
-  //     active: true
-  //     direction: 'two_way'
-  //   }
   rel(orders.user_id > users.id, true, 'two_way')
 ]
 }
