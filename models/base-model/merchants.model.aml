@@ -27,7 +27,5 @@ TableModel merchants {
   dimension created_at {
     label: 'Created At'
     type: 'datetime'
-  }
-  description: "test"
-  
+  }  
 }
