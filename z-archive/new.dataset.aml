@@ -4,7 +4,7 @@ import '../models/base-model/countries.model.aml' { countries }
 
 Dataset general_dataset {
   label: "General Dataset"
-  description: "Short Descritpion"
+  description: "\"Short Descritpion"
 
   data_source_name: 'demodb'
 
