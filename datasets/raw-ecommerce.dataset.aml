@@ -7,7 +7,7 @@ import '../models/base-model/categories.model.aml' { categories }
 import '../models/base-model/cities.model.aml' { cities }
 import '../models/base-model/countries.model.aml' { countries }
 
-Dataset raw_ecommerce {
+Dataset ecommerce {
   label: 'Raw Ecommerce'
   description: "Dataset desc"
 	owner: 'khai@holistics.io'
