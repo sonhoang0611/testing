@@ -1,6 +1,6 @@
 TableModel users {
   type: 'table'
-  table_name: 'ecommerce.products'
+  table_name: 'ecommerce.users'
   data_source_name: 'demodb'
   // table_name: 'Users'
 } 
