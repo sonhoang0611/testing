@@ -1,8 +1,6 @@
 TableModel users {
   type: 'table'
-  table_name: 'ecommerce.users'
-  data_source_name: 'demodb'
-  // table_name: 'Users'
+  table_name: 'Users'
 } 
 
 QueryModel order_master {
