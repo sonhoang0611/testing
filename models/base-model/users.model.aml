@@ -13,5 +13,3 @@ Dataset ecommerce {
   models: [users, order_master]
   relationships: [rel(order_master.user_id > users.id, true, 'two_way')]
 }
-
-5 + 'b'
