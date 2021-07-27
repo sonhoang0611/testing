@@ -1,10 +1,12 @@
 TableModel users {
   type: 'table'
   table_name: 'Users'
+  data_source_name: 'demodb'
 } 
 
 QueryModel order_master {
   type: 'query'
+  data_source_name: 'demodb'
   query: @sql SELECT 1 ;;
 }
 
