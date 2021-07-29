@@ -1,6 +1,6 @@
 TableModel users {
   type: 'table'
-  table_name: 'Users'
+  table_name: 'users'
   data_source_name: 'demodb'
 } 
 
