@@ -2,6 +2,11 @@ TableModel users {
   type: 'table'
   table_name: 'users'
   data_source_name: 'demodb'
+
+  dimension id {
+    label: 'id'
+    type: 'number'
+  }
 } 
 
 QueryModel order_master {
