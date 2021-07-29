@@ -17,3 +17,5 @@ Dataset raw_ecommerce {
     rel(orders.user_id > users.id, true, 'two_way')
   ]
 }
+
+orders
