@@ -9,11 +9,11 @@ TableModel users {
   }
 } 
 
-QueryModel order_master {
-  type: 'query'
-  data_source_name: 'demodb'
-  query: @sql SELECT 1 ;;
-}
+// QueryModel order_master {
+//   type: 'query'
+//   data_source_name: 'demodb'
+//   query: @sql SELECT 1 ;;
+// }
 
 Dataset ecommerce {
   data_source_name: 'demodb'
