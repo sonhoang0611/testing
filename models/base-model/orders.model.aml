@@ -1,3 +1,5 @@
+import './users.model.aml' { users }
+
 Model orders {
   type: 'table'
   label: "Orders"
@@ -43,4 +45,4 @@ Relationship rel_a {
   to: ref('users', 'id')
 }
 
-orders
+users
