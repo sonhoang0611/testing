@@ -1,6 +1,6 @@
 TableModel users {
   type: 'table'
-  table_name: 'users'
+  table_name: 'ecommerce.users'
   data_source_name: 'demodb'
 
   dimension id {
