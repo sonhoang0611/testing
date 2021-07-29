@@ -7,7 +7,7 @@ TableModel users {
     label: 'id'
     type: 'number'
   }
-} 
+}
 
 // QueryModel order_master {
 //   type: 'query'
