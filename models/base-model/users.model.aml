@@ -1,4 +1,4 @@
-TableModel users {
+Model users {
   type: 'table'
   table_name: 'ecommerce.users'
   data_source_name: 'demodb'
