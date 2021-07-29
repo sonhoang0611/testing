@@ -17,7 +17,7 @@ QueryModel order_master {
 }
 
 Dataset ecommerce {
-  data_source_name: 'Ecommerce'
+  data_source_name: 'demodb'
   models: [users, order_master]
   relationships: [rel(order_master.user_id > users.id, true, 'two_way')]
 }
