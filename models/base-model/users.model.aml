@@ -21,4 +21,4 @@ TableModel users {
 //   relationships: [rel(order_master.user_id > users.id, true, 'two_way')]
 // }
 
-users
+// users
