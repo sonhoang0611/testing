@@ -1,0 +1,12 @@
+Model users {
+  type: 'query'
+  label: 'users'
+  description: ''
+  data_source_name: 'demoDB-read'
+
+
+  owner: 'tai.nguyen@holistics.io'
+  query: @sql select * from ecommerce.users;;
+  models: [
+  ]
+}
