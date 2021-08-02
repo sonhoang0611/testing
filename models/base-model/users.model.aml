@@ -64,6 +64,15 @@ Model users {
     hidden: false
     definition: @sql {{ #SOURCE.full_name }};;
   }
+  dimension gender_full {
+    label: "Gender Full"
+    type: "string"
+    definition: @sql case when {{ gender }} = 'f' then 'female'
+  when {{ gender }} = 'm' then 'male'
+  else 'others'
+end;;
+    hidden: false
+  }
 
   owner: 'khai.to@holistics.io'
   table_name: '\"ecommerce\".\"users\"'
