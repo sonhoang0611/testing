@@ -1,13 +1,14 @@
 Model users {
   type: 'table'
   label: 'Users'
-  description: ''
+  description: "Description nha"
   data_source_name: 'khaipostgresql'
   dimension id {
-    label: 'Id'
-    type: 'number'
-    hidden: false
+    label: "Id"
+    type: "number"
     definition: @sql {{ #SOURCE.id }};;
+    hidden: false
+    description: "this is ID"
   }
   dimension sign_up_date {
     label: 'Sign Up Date'
@@ -65,5 +66,5 @@ Model users {
   }
 
   owner: 'khai.to@holistics.io'
-  table_name: '"ecommerce"."users"'
+  table_name: '\"ecommerce\".\"users\"'
 }
