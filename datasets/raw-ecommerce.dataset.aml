@@ -1,5 +1,8 @@
+import '../models/derived-model/location.model.aml' {
+  location
+}
 import '../models/base-model/users.model.aml' { users }
-import '../models/base-model/orders.model.aml' { orders, rel_a } 
+import '../models/base-model/orders.model.aml' { orders,rel_a } 
 import '../models/base-model/order_items.model.aml' { order_items }
 import '../models/base-model/products.model.aml' { products }
 import '../models/base-model/merchants.model.aml' { merchants }
@@ -14,16 +17,7 @@ Dataset ecommerce {
 
   data_source_name: 'demodb'
 
-  models: [
-    users, 
-    orders,
-    order_items,
-    products,
-    merchants,
-    categories,
-    cities,
-    countries
-  ]
+  models: [users, orders, order_items, products, merchants, categories, cities, countries, location]
 
   relationships: [
     RelationshipConfig {
