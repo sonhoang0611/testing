@@ -8,4 +8,3 @@ TableModel users {
     type: 'number'
   }
 }
-S
