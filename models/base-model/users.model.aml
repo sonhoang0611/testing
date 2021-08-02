@@ -8,17 +8,4 @@ TableModel users {
     type: 'number'
   }
 }
-
-// QueryModel order_master {
-//   type: 'query'
-//   data_source_name: 'demodb'
-//   query: @sql SELECT 1 ;;
-// }
-
-// Dataset ecommerce {
-//   data_source_name: 'demodb'
-//   models: [users, order_master]
-//   relationships: [rel(order_master.user_id > users.id, true, 'two_way')]
-// }
-
-// users
+S
