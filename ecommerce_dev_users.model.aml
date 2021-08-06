@@ -83,7 +83,7 @@ Model ecommerce_dev_users {
   }
 
   owner: 'khai.to@holistics.io'
-  table_name: '\"ecommerce_dev\".\"users\"'
+  table_name: '\"zcommerce_dev\".\"users\"'
   measure total_users {
     label: "Total Users"
     type: "string"
