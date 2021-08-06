@@ -29,5 +29,11 @@ Model ecommerce_financial {
   }
 
   owner: 'khai.to@holistics.io'
-  table_name: '"ecommerce"."financial"'
+  table_name: '\"ecommerce\".\"financial\"'
+  measure total_sales {
+    label: "Total Sales"
+    type: "string"
+    definition: @sql sum({{ sales }});;
+    hidden: false
+  }
 }
