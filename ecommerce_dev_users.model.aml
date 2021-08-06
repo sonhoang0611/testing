@@ -1,7 +1,7 @@
 Model ecommerce_dev_users {
   type: 'table'
   label: 'Users'
-  description: ''
+  description: "this is description"
   data_source_name: 'khaipostgresql'
   dimension id {
     label: 'Id'
@@ -83,5 +83,11 @@ Model ecommerce_dev_users {
   }
 
   owner: 'khai.to@holistics.io'
-  table_name: '"ecommerce_dev"."users"'
+  table_name: '\"ecommerce_dev\".\"users\"'
+  measure total_users {
+    label: "Total Users"
+    type: "string"
+    definition: @sql count({{ id }});;
+    hidden: false
+  }
 }
