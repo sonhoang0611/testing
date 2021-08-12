@@ -1,6 +1,6 @@
 Model users {
   type: 'query'
-  label: 'users'
+  label: 'Users Tai'
   description: ''
   data_source_name: 'demoDB-read'
 
