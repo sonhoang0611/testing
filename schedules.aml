@@ -1,4 +1,4 @@
-import 'models/derived-model/location.model.aml' { location }
+import './models/derived-model/location.model.aml' { location }
 
 const schedules = [
   Schedule { models: [location], cron: '* * * * *' }
