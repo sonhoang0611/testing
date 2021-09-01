@@ -1,5 +1,5 @@
 import 'models/derived-model/location.model.aml' { location }
 
 const schedules = [
-  Schedule { models: [location], cron: '0 * * * *' }
+  Schedule { models: [location], cron: '10 * * * *' }
 ]
