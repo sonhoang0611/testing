@@ -48,10 +48,4 @@ Model location {
     schema: 'testing'
   }
 
-
-  // dimension continent_name {
-  //   label: 'Continent Name'
-  //   type: 'text'
-  // }
-
 }
