@@ -27,7 +27,6 @@ Model ecommerce_financial1 {
     hidden: false
     definition: @sql {{ #SOURCE.profit }};;
   }
-
-  owner: 'khai.to@holistics.io'
+  owner: ""
   table_name: '\"ecommerce\".\"financial\"'
 }
