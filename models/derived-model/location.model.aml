@@ -44,8 +44,16 @@ Model location {
     type: 'text'
   }
 
-  persistence: FullPersistence {
-    schema: 'testing'
+  dimension test {
+    label: 'Thong'
+    type: 'text'
   }
+
+
+
+  // dimension continent_name {
+  //   label: 'Continent Name'
+  //   type: 'text'
+  // }
 
 }
