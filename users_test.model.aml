@@ -1,4 +1,5 @@
 Model users_test {
+  
   type: 'query'
   label: 'users_test'
   description: ''
