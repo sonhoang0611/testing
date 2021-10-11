@@ -1,0 +1,15 @@
+import '../../models/orders.model.aml' {
+  orders as model__orders
+}
+
+Dataset map {
+  label: 'MAP'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  models: [
+    model__orders
+  ]
+  relationships: [
+  ]
+  owner: 'tuan.nguyen@holistics.io'
+}

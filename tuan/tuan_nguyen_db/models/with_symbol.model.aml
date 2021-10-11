@@ -1,0 +1,21 @@
+Model with_symbol {
+  type: 'table'
+  label: 'With_symbol'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  dimension province {
+    label: 'Province'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.province }};;
+  }
+  dimension population {
+    label: 'Population'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.population }};;
+  }
+
+  owner: 'tuan.nguyen@holistics.io'
+  table_name: '"ecommerce"."persisted_with_symbol91"'
+}

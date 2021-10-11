@@ -1,0 +1,93 @@
+Model sheet_2 {
+  type: 'table'
+  label: 'Sheet_2'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  dimension ship_mode {
+    label: 'Ship Mode'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.ship_mode }};;
+  }
+  dimension segment {
+    label: 'Segment'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.segment }};;
+  }
+  dimension country {
+    label: 'Country'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.country }};;
+  }
+  dimension city {
+    label: 'City'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.city }};;
+  }
+  dimension state {
+    label: 'State'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.state }};;
+  }
+  dimension postal_code {
+    label: 'Postal Code'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.postal_code }};;
+  }
+  dimension region {
+    label: 'Region'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.region }};;
+  }
+  dimension category {
+    label: 'Category'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.category }};;
+  }
+  dimension sub_category {
+    label: 'Sub Category'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.sub_category }};;
+  }
+  dimension product_name {
+    label: 'Product Name'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.product_name }};;
+  }
+  dimension sales {
+    label: 'Sales'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.sales }};;
+  }
+  dimension quantity {
+    label: 'Quantity'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.quantity }};;
+  }
+  dimension discount {
+    label: 'Discount'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.discount }};;
+  }
+  dimension profit {
+    label: 'Profit'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.profit }};;
+  }
+
+  owner: 'tuan.nguyen@holistics.io'
+  table_name: '"ecommerce"."persisted_sheet_2"'
+}

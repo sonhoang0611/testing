@@ -1,0 +1,15 @@
+import '../../models/us_counties.model.aml' {
+  us_counties as model__us_counties
+}
+
+Dataset covid19 {
+  label: 'Covid19'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  models: [
+    model__us_counties
+  ]
+  relationships: [
+  ]
+  owner: 'tuan.nguyen@holistics.io'
+}

@@ -1,0 +1,111 @@
+Model city_lat_long {
+  type: 'table'
+  label: 'City_lat_long'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  dimension city {
+    label: 'City'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.city }};;
+  }
+  dimension city_ascii {
+    label: 'City Ascii'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.city_ascii }};;
+  }
+  dimension city_lat {
+    label: 'City Lat'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.city_lat }};;
+  }
+  dimension city_long {
+    label: 'City Long'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.city_long }};;
+  }
+  dimension county_fips {
+    label: 'County Fips'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.county_fips }};;
+  }
+  dimension county_name {
+    label: 'County Name'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.county_name }};;
+  }
+  dimension density {
+    label: 'Density'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.density }};;
+  }
+  dimension id {
+    label: 'Id'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.id }};;
+  }
+  dimension incorporated {
+    label: 'Incorporated'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.incorporated }};;
+  }
+  dimension military {
+    label: 'Military'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.military }};;
+  }
+  dimension population {
+    label: 'Population'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.population }};;
+  }
+  dimension ranking {
+    label: 'Ranking'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.ranking }};;
+  }
+  dimension source {
+    label: 'Source'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.source }};;
+  }
+  dimension state_id {
+    label: 'State Id'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.state_id }};;
+  }
+  dimension state_name {
+    label: 'State Name'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.state_name }};;
+  }
+  dimension timezone {
+    label: 'Timezone'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.timezone }};;
+  }
+  dimension zips {
+    label: 'Zips'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.zips }};;
+  }
+
+  owner: 'tuan.nguyen@holistics.io'
+  table_name: '"ecommerce"."persisted_uscities_csv"'
+}

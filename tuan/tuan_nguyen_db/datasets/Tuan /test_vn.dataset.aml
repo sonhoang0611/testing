@@ -1,0 +1,19 @@
+import '../../models/with_symbol.model.aml' {
+  with_symbol as model__with_symbol
+}
+import '../../models/without_symbol.model.aml' {
+  without_symbol as model__without_symbol
+}
+
+Dataset test_vn {
+  label: 'test - VN'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  models: [
+    model__with_symbol,
+    model__without_symbol
+  ]
+  relationships: [
+  ]
+  owner: 'tuan.nguyen@holistics.io'
+}

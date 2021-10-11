@@ -1,0 +1,19 @@
+import '../../models/Map Test/city_lat_long.model.aml' {
+  city_lat_long as model__city_lat_long
+}
+import '../../models/Map Test/ecommerce_sales_us_map.model.aml' {
+  ecommerce_sales_us_map as model__ecommerce_sales_us_map
+}
+
+Dataset ecommerce_sales_us {
+  label: 'ecommerce_sales_us'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  models: [
+    model__city_lat_long,
+    model__ecommerce_sales_us_map
+  ]
+  relationships: [
+  ]
+  owner: 'tuan.nguyen@holistics.io'
+}

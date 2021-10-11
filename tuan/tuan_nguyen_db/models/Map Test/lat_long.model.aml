@@ -1,0 +1,33 @@
+Model lat_long {
+  type: 'table'
+  label: 'Lat_long'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  dimension code {
+    label: 'Code'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.code }};;
+  }
+  dimension lat {
+    label: 'Lat'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.lat }};;
+  }
+  dimension long {
+    label: 'Long'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.long }};;
+  }
+  dimension state {
+    label: 'State'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.state }};;
+  }
+
+  owner: 'tuan.nguyen@holistics.io'
+  table_name: '"ecommerce"."persisted_sheet_335"'
+}

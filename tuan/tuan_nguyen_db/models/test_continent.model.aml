@@ -1,0 +1,27 @@
+Model test_continent {
+  type: 'table'
+  label: 'Test_continent'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  dimension code {
+    label: 'Code'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.code }};;
+  }
+  dimension continent_name {
+    label: 'Continent Name'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.continent_name }};;
+  }
+  dimension profit {
+    label: 'Profit'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.profit }};;
+  }
+
+  owner: 'tuan.nguyen@holistics.io'
+  table_name: '"ecommerce"."persisted_sheet_3"'
+}

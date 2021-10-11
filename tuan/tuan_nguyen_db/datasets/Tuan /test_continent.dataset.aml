@@ -1,0 +1,15 @@
+import '../../models/test_continent.model.aml' {
+  test_continent as model__test_continent
+}
+
+Dataset test_continent {
+  label: 'test - continent'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  models: [
+    model__test_continent
+  ]
+  relationships: [
+  ]
+  owner: 'tuan.nguyen@holistics.io'
+}

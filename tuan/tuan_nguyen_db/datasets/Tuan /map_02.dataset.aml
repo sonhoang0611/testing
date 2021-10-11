@@ -1,0 +1,15 @@
+import '../../models/sheet_1.model.aml' {
+  sheet_1 as model__sheet_1
+}
+
+Dataset map_02 {
+  label: 'MAP - 02'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  models: [
+    model__sheet_1
+  ]
+  relationships: [
+  ]
+  owner: 'tuan.nguyen@holistics.io'
+}

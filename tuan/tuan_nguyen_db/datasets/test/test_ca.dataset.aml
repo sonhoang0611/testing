@@ -1,0 +1,15 @@
+import '../../models/test_aus.model.aml' {
+  test_aus as model__test_aus
+}
+
+Dataset test_ca {
+  label: 'test - CA'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  models: [
+    model__test_aus
+  ]
+  relationships: [
+  ]
+  owner: 'tuan.nguyen@holistics.io'
+}

@@ -1,0 +1,39 @@
+Model test_all {
+  type: 'table'
+  label: 'Test_all'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  dimension country {
+    label: 'Country'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.country }};;
+  }
+  dimension _2_l_code {
+    label: '2 L Code'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.2_l_code }};;
+  }
+  dimension _3_l_code {
+    label: '3 L Code'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.3_l_code }};;
+  }
+  dimension numeric_code {
+    label: 'Numeric Code'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.numeric_code }};;
+  }
+  dimension profit {
+    label: 'Profit'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.profit }};;
+  }
+
+  owner: 'tuan.nguyen@holistics.io'
+  table_name: '"ecommerce"."persisted_sheet_31"'
+}

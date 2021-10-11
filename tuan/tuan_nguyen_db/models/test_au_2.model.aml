@@ -1,0 +1,81 @@
+Model test_au_2 {
+  type: 'table'
+  label: 'Test_au_2'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  dimension division {
+    label: 'Division'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.division }};;
+  }
+  dimension typ {
+    label: 'Typ'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.typ }};;
+  }
+  dimension hasc {
+    label: 'Hasc'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.hasc }};;
+  }
+  dimension iso {
+    label: 'Iso'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.iso }};;
+  }
+  dimension gec {
+    label: 'Gec'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.gec }};;
+  }
+  dimension iata {
+    label: 'Iata'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.iata }};;
+  }
+  dimension marc {
+    label: 'Marc'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.marc }};;
+  }
+  dimension conv {
+    label: 'Conv'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.conv }};;
+  }
+  dimension population {
+    label: 'Population'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.population }};;
+  }
+  dimension area_km {
+    label: 'Area Km'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.area_km }};;
+  }
+  dimension area_mi {
+    label: 'Area Mi'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.area_mi }};;
+  }
+  dimension capital {
+    label: 'Capital'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.capital }};;
+  }
+
+  owner: 'tuan.nguyen@holistics.io'
+  table_name: '"ecommerce"."persisted_test_au_2"'
+}

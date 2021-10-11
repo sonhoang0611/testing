@@ -1,0 +1,11 @@
+Relationship orders_ecommerce_sales_us_map {
+  type: 'many_to_one'
+  from: FieldRef {
+    model: 'orders'
+    field: 'order_id'
+  }
+  to: FieldRef {
+    model: 'ecommerce_sales_us_map'
+    field: 'product_id'
+  }
+}

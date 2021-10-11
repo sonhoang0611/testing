@@ -6,3 +6,41 @@ import './staging/holisticsstaging/datasets/3.0 Backup/test/countries_data_maps_
 }
 
 // END AUTO-IMPORTED OBJECTS
+
+
+// BEGIN AUTO-IMPORTED OBJECTS
+import './tuan/tuan_nguyen_db/datasets/Tuan /map.dataset.aml' {
+  map as tuan_map
+}
+import './tuan/tuan_nguyen_db/datasets/Tuan /map_02.dataset.aml' {
+  map_02 as tuan_map_02
+}
+import './tuan/tuan_nguyen_db/datasets/Tuan /test_us.dataset.aml' {
+  test_us as tuan_test_us
+}
+import './tuan/tuan_nguyen_db/datasets/Tuan /test_continent.dataset.aml' {
+  test_continent as tuan_test_continent
+}
+import './tuan/tuan_nguyen_db/datasets/Tuan /test_au.dataset.aml' {
+  test_au as tuan_test_au
+}
+import './tuan/tuan_nguyen_db/datasets/Tuan /test_vn.dataset.aml' {
+  test_vn as tuan_test_vn
+}
+import './tuan/tuan_nguyen_db/datasets/Tuan /test_all.dataset.aml' {
+  test_all as tuan_test_all
+}
+import './tuan/tuan_nguyen_db/datasets/Tuan /covid19.dataset.aml' {
+  covid19 as tuan_covid19
+}
+import './tuan/tuan_nguyen_db/datasets/test/test_ca.dataset.aml' {
+  test_ca as tuan_test_ca
+}
+import './tuan/tuan_nguyen_db/datasets/test/airbnb_listings.dataset.aml' {
+  airbnb_listings as tuan_airbnb_listings
+}
+import './tuan/tuan_nguyen_db/datasets/test/ecommerce_sales_us.dataset.aml' {
+  ecommerce_sales_us as tuan_ecommerce_sales_us
+}
+
+// END AUTO-IMPORTED OBJECTS

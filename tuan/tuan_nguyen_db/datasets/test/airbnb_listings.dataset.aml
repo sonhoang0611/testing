@@ -1,0 +1,15 @@
+import '../../models/Map Test/airbnb_listings.model.aml' {
+  airbnb_listings as model__airbnb_listings
+}
+
+Dataset airbnb_listings {
+  label: 'airbnb_listings'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  models: [
+    model__airbnb_listings
+  ]
+  relationships: [
+  ]
+  owner: 'tuan.nguyen@holistics.io'
+}

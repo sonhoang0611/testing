@@ -1,0 +1,15 @@
+import '../../models/sheet_2.model.aml' {
+  sheet_2 as model__sheet_2
+}
+
+Dataset test_us {
+  label: 'Test - US'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  models: [
+    model__sheet_2
+  ]
+  relationships: [
+  ]
+  owner: 'tuan.nguyen@holistics.io'
+}

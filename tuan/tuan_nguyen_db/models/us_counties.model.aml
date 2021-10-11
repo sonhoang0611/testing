@@ -1,0 +1,45 @@
+Model us_counties {
+  type: 'table'
+  label: 'Us_counties'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  dimension date {
+    label: 'Date'
+    type: 'date'
+    hidden: false
+    definition: @sql {{ #SOURCE.date }};;
+  }
+  dimension county {
+    label: 'County'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.county }};;
+  }
+  dimension state {
+    label: 'State'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.state }};;
+  }
+  dimension fips {
+    label: 'Fips'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.fips }};;
+  }
+  dimension cases {
+    label: 'Cases'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.cases }};;
+  }
+  dimension deaths {
+    label: 'Deaths'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.deaths }};;
+  }
+
+  owner: 'tuan.nguyen@holistics.io'
+  table_name: '"ecommerce"."persisted_us_counties"'
+}

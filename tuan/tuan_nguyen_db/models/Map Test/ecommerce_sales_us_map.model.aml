@@ -1,0 +1,157 @@
+import './sales_no_lat_long.model.aml' {
+  sales_no_lat_long as model__sales_no_lat_long
+}
+import './lat_long.model.aml' {
+  lat_long as model__lat_long
+}
+
+Model ecommerce_sales_us_map {
+  type: 'query'
+  label: 'ecommerce_sales_us_map'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  dimension order_id {
+    label: 'Order Id'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.order_id }};;
+  }
+  dimension order_date {
+    label: 'Order Date'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.order_date }};;
+  }
+  dimension ship_date {
+    label: 'Ship Date'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.ship_date }};;
+  }
+  dimension ship_mode {
+    label: 'Ship Mode'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.ship_mode }};;
+  }
+  dimension customer_id {
+    label: 'Customer Id'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.customer_id }};;
+  }
+  dimension customer_name {
+    label: 'Customer Name'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.customer_name }};;
+  }
+  dimension segment {
+    label: 'Segment'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.segment }};;
+  }
+  dimension country {
+    label: 'Country'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.country }};;
+  }
+  dimension city {
+    label: 'City'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.city }};;
+  }
+  dimension state {
+    label: 'State'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.state }};;
+  }
+  dimension postal_code {
+    label: 'Postal Code'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.postal_code }};;
+  }
+  dimension region {
+    label: 'Region'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.region }};;
+  }
+  dimension product_id {
+    label: 'Product Id'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.product_id }};;
+  }
+  dimension category {
+    label: 'Category'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.category }};;
+  }
+  dimension sub_category {
+    label: 'Sub Category'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.sub_category }};;
+  }
+  dimension product_name {
+    label: 'Product Name'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.product_name }};;
+  }
+  dimension sales {
+    label: 'Sales'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.sales }};;
+  }
+  dimension quantity {
+    label: 'Quantity'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.quantity }};;
+  }
+  dimension discount {
+    label: 'Discount'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.discount }};;
+  }
+  dimension profit {
+    label: 'Profit'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.profit }};;
+  }
+  dimension lat {
+    label: 'Lat'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.lat }};;
+  }
+  dimension long {
+    label: 'Long'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.long }};;
+  }
+
+  owner: 'tuan.nguyen@holistics.io'
+  query: @sql
+    select {{#a.*}}
+      , {{ #b.lat }}
+      , {{ #b.long }}
+    from {{ #sales_no_lat_long as a }}
+    left join {{#lat_long as b}} on {{ #a.state }} = {{ #b.state }};;
+  models: [
+    model__sales_no_lat_long,
+    model__lat_long
+  ]
+}

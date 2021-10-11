@@ -1,0 +1,27 @@
+Model test_aus {
+  type: 'table'
+  label: 'Test_aus'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  dimension state_name {
+    label: 'State Name'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.state_name }};;
+  }
+  dimension code_name {
+    label: 'Code Name'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.code_name }};;
+  }
+  dimension profit {
+    label: 'Profit'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.profit }};;
+  }
+
+  owner: 'tuan.nguyen@holistics.io'
+  table_name: '"ecommerce"."persisted_test_aus1"'
+}

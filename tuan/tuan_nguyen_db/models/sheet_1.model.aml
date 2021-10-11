@@ -1,0 +1,45 @@
+Model sheet_1 {
+  type: 'table'
+  label: 'Sheet_1'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  dimension country_code {
+    label: 'Country Code'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.country_code }};;
+  }
+  dimension country_name {
+    label: 'Country Name'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.country_name }};;
+  }
+  dimension region {
+    label: 'Region'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.region }};;
+  }
+  dimension year {
+    label: 'Year'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.year }};;
+  }
+  dimension co_2_kt {
+    label: 'Co 2 Kt'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.co_2_kt }};;
+  }
+  dimension co_2_per_capita_metric_tons {
+    label: 'Co 2 Per Capita Metric Tons'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.co_2_per_capita_metric_tons }};;
+  }
+
+  owner: 'tuan.nguyen@holistics.io'
+  table_name: '"ecommerce"."persisted_sheet_12"'
+}

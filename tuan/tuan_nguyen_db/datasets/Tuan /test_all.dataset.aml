@@ -1,0 +1,15 @@
+import '../../models/test_all.model.aml' {
+  test_all as model__test_all
+}
+
+Dataset test_all {
+  label: 'test - all'
+  description: ''
+  data_source_name: 'tuan_nguyen_db'
+  models: [
+    model__test_all
+  ]
+  relationships: [
+  ]
+  owner: 'tuan.nguyen@holistics.io'
+}
