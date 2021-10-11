@@ -1,0 +1,9 @@
+Model public_sftp_dests {
+  type: 'table'
+  label: 'Sftp_dests'
+  description: ''
+  data_source_name: 'holisticsstaging'
+
+
+  table_name: '"public"."sftp_dests"'
+}
