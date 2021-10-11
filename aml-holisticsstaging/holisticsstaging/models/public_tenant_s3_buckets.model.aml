@@ -1,9 +1,0 @@
-Model public_tenant_s3_buckets {
-  type: 'table'
-  label: 'Tenant_s3_buckets'
-  description: ''
-  data_source_name: 'holisticsstaging'
-
-
-  table_name: '"public"."tenant_s3_buckets"'
-}

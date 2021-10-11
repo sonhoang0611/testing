@@ -1,9 +1,0 @@
-Model public_jobs {
-  type: 'table'
-  label: 'Jobs'
-  description: ''
-  data_source_name: 'holisticsstaging'
-
-
-  table_name: '"public"."jobs"'
-}
