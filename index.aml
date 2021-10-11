@@ -1,13 +1,4 @@
 
-
-// BEGIN AUTO-IMPORTED OBJECTS
-import './staging/holisticsstaging/datasets/3.0 Backup/test/countries_data_maps_demo_csv.dataset.aml' {
-  countries_data_maps_demo_csv as staging_countries_data_maps_demo_csv
-}
-
-// END AUTO-IMPORTED OBJECTS
-
-
 // BEGIN AUTO-IMPORTED OBJECTS
 import './tuan/tuan_nguyen_db/datasets/Tuan /map.dataset.aml' {
   map as tuan_map
