@@ -4,7 +4,7 @@ import './datasets/sontest.dataset.aml' { son_test }
 import './datasets/general.dataset.aml' { general_dataset }
 
 // BEGIN AUTO-IMPORTED OBJECTS
-import './aml-demodb/holisticsstaging/datasets/3.0 Backup/test/countries_data_maps_demo_csv.dataset.aml' {
+import './aml-holisticsstaging/holisticsstaging/datasets/3.0 Backup/test/countries_data_maps_demo_csv.dataset.aml' {
   countries_data_maps_demo_csv as aml-demodb_countries_data_maps_demo_csv
 }
 
