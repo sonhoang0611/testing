@@ -1,0 +1,9 @@
+Model upload_test_ga {
+  type: 'table'
+  label: 'Test_ga'
+  description: ''
+  data_source_name: 'holisticsstaging'
+
+
+  table_name: '"upload"."test_ga"'
+}
