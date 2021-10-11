@@ -1,0 +1,9 @@
+Model cache_q-t3-r210-c1c564d585607f5b80e6 {
+  type: 'table'
+  label: 'Q-t3-r210-c1c564d585607f5b80e6'
+  description: ''
+  data_source_name: 'holisticsstaging'
+
+
+  table_name: '"cache"."q-t3-r210-c1c564d585607f5b80e6"'
+}

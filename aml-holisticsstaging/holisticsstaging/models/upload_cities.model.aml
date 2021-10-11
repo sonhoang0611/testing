@@ -1,0 +1,22 @@
+Model upload_cities {
+  type: 'table'
+  label: 'Cities'
+  description: ''
+  data_source_name: 'holisticsstaging'
+  dimension ci_ty {
+    label: 'Ci\'ty'
+    description: 'city name'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.ci'ty }};;
+  }
+  dimension country {
+    label: 'Country'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.country }};;
+  }
+
+  owner: 'khai.to+staging2@holistics.io'
+  table_name: '"upload"."cities"'
+}
