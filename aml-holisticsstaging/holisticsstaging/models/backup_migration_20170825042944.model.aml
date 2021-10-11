@@ -1,9 +1,0 @@
-Model backup_migration_20170825042944 {
-  type: 'table'
-  label: 'Migration_20170825042944'
-  description: ''
-  data_source_name: 'holisticsstaging'
-
-
-  table_name: '"backup"."migration_20170825042944"'
-}

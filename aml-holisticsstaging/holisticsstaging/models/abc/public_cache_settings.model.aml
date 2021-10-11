@@ -1,9 +1,0 @@
-Model public_cache_settings {
-  type: 'table'
-  label: 'Cache_settings'
-  description: ''
-  data_source_name: 'holisticsstaging'
-
-
-  table_name: '"public"."cache_settings"'
-}

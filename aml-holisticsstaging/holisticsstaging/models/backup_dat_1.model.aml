@@ -1,9 +1,0 @@
-Model backup_dat_1 {
-  type: 'table'
-  label: 'Dat_1'
-  description: 'iouou'
-  data_source_name: 'holisticsstaging'
-
-
-  table_name: '"backup"."dat_1"'
-}
