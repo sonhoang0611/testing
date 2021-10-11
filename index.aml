@@ -2,7 +2,7 @@
 
 // BEGIN AUTO-IMPORTED OBJECTS
 import './aml-holisticsstaging/holisticsstaging/datasets/3.0 Backup/test/countries_data_maps_demo_csv.dataset.aml' {
-  countries_data_maps_demo_csv as aml-holisticsstaging_countries_data_maps_demo_csv
+  countries_data_maps_demo_csv as holisticsstaging_countries_data_maps_demo_csv
 }
 
 // END AUTO-IMPORTED OBJECTS
