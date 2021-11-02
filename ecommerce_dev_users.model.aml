@@ -4,7 +4,7 @@ Model ecommerce_dev_users {
   description: "this is description"
   data_source_name: 'khaipostgresql'
   dimension id {
-    label: 'Id'
+    label: 'ID'
     type: 'number'
     hidden: false
     definition: @sql {{ #SOURCE.id }};;

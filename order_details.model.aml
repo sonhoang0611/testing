@@ -1,13 +1,14 @@
 Model order_details {
   type: 'query'
   label: 'order_details'
-  description: ''
+  description: ""
   data_source_name: 'khaipostgresql'
   dimension email {
-    label: 'Email'
-    type: 'text'
-    hidden: false
+    label: "Email"
+    type: "text"
     definition: @sql {{ #SOURCE.email }};;
+    hidden: false
+    description: "email meo meo"
   }
   dimension id {
     label: 'Id'
@@ -23,10 +24,9 @@ Model order_details {
   }
 
   owner: 'khai.to@holistics.io'
-  query: @sql
-    select u.email, o.id, o.status
-    from ecommerce.orders o
-      left join ecommerce.users u on o.user_id = u.id;;
+  query: @sql  select u.email, o.id, o.status
+from ecommerce.orders o
+  left join ecommerce.users u on o.user_id = u.id;;
   models: [
   ]
 }

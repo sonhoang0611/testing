@@ -1,7 +1,7 @@
 Model ecommerce_financial1 {
   type: 'table'
   label: 'Financial'
-  description: "a"
+  description: "change to test commit"
   data_source_name: 'khaipostgresql'
   dimension month {
     label: 'Month'
