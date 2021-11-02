@@ -1,5 +1,5 @@
 Model ecommerce_users {
-  // a
+  // aa
   type: 'table'
   label: 'Users'
   description: ''
