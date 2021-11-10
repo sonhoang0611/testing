@@ -1,7 +1,7 @@
 TableModel categories {
   type: 'table'
   label: 'Categories'
-  table_name: '"ecommerce"."categories"'
+  table_name: '\"ecommerce\".\"categories\"'
   data_source_name: 'demodb'
 
   dimension id {
@@ -18,6 +18,6 @@ TableModel categories {
     label: 'Parent Id'
     type: 'number'
   }
-  description: ""
+  description: "test description"
   
 }
