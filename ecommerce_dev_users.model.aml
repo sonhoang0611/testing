@@ -3,7 +3,7 @@
 Model ecommerce_dev_users {
   type: 'table'
   label: 'Users'
-  description: "this is descriptiona hihi bye"
+  description: "this is description hehe"
   data_source_name: 'khaipostgresql'
   dimension id {
     label: 'Id'
