@@ -1,4 +1,4 @@
-// TODO: ask Khai To about this
+// TODO: ask Khai To about this demo
 
 Model ecommerce_dev_users {
   type: 'table'
