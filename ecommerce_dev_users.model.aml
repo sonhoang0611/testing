@@ -22,6 +22,7 @@ Model ecommerce_dev_users {
     type: 'datetime'
     hidden: false
     definition: @sql {{ #SOURCE.sign_up_at }};;
+    description: 'Timestamp at which this user signs up on the platform. UTC'
   }
   dimension first_name {
     label: 'First Name'
