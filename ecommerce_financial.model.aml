@@ -1,7 +1,7 @@
 Model ecommerce_financial {
   type: 'table'
   label: 'Financial'
-  description: ''
+  description: 'desc'
   data_source_name: 'khaipostgresql'
   dimension month {
     label: 'Month'
