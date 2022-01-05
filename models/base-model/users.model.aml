@@ -66,7 +66,7 @@ Model users {
   }
   dimension gender_full {
     label: "Gender Full"
-    type: "string"
+    type: "text"
     definition: @sql  case when {{ gender }} = 'f' then 'female'
   when {{ gender }} = 'm' then 'male'
   else 'others'
@@ -78,7 +78,7 @@ end;;
   table_name: '\"ecommerce\".\"users\"'
   measure total_users {
     label: "Total Users"
-    type: "string"
+    type: "number"
     definition: @sql count({{ id }});;
     hidden: false
   }
