@@ -1,4 +1,4 @@
-// TODO: ask Khai To about this demo
+// TODO: ask Khai To about this demo nha nha
 
 Model ecommerce_dev_users {
   type: 'table'

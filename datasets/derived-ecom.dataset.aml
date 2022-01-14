@@ -1,5 +1,5 @@
 import '../models/base-model/users.model.aml' { users }
-import '../models/base-model/orders.model.aml' { orders } 
+import '../models/base-model/orders.model.aml' { orders as o } 
 
 Dataset raw_ecommerce {
   label: 'Raw Ecommerce'
@@ -10,8 +10,8 @@ Dataset raw_ecommerce {
 
   models: [
     users,
-    orders
+    o
   ]
 
-  relationships: [rel(orders.user_id > users.id, true)]
+  relationships: [relationship(o.user_id > users.id, true)]
 }
