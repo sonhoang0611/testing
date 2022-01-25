@@ -15,3 +15,5 @@ Dataset raw_ecommerce {
 
   relationships: [relationship(o.user_id > users.id, true)]
 }
+
+raw_ecommerce
