@@ -6,3 +6,4 @@ import './tuan/tuan_nguyen_db/datasets/Tuan /map.dataset.aml' {
 
 // END AUTO-IMPORTED OBJECTS
 
+import './datasets/general.dataset.aml' { general_dataset }

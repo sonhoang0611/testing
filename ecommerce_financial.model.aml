@@ -1,7 +1,7 @@
-Model ecommerce_financial {
+Model ecommerce_financial1 {
   type: 'table'
   label: 'Financial'
-  description: 'desc'
+  description: "a"
   data_source_name: 'khaipostgresql'
   dimension month {
     label: 'Month'
@@ -27,7 +27,6 @@ Model ecommerce_financial {
     hidden: false
     definition: @sql {{ #SOURCE.profit }};;
   }
-
-  owner: 'khai.to@holistics.io'
-  table_name: '"ecommerce"."financial"'
-}
+  owner: ""
+  table_name: '\"ecommerce\".\"financial\"'
+};
