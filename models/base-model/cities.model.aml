@@ -28,8 +28,8 @@ Model cities {
   measure measure_ {
     label: "Measure"
     type: "number"
-    hidden: false
-    definition: @sql count(*) OVER (PARTITION BY {{ #name }});;
+    definition: @sql count(*) OVER (PARTITION BY {{ name }});;
     description: "ahihi"
+    aggregation_type: "custom"
   }
 }
