@@ -29,7 +29,7 @@ Model cities {
     label: "Measure"
     type: "number"
     hidden: false
-    definition: @sql count(*) OVER (PARTITION BY {{ #THIS.name }});;
+    definition: @sql count(*) OVER (PARTITION BY {{ #name }});;
     description: "ahihi"
   }
 }
