@@ -19,10 +19,16 @@ Model cities {
     type: 'text'
     hidden: true
   } 
+
   dimension test_field {
-    label: "Country Code"
-    type: "text"
+    label: 'Country Code'
+    type: 'text'
     hidden: true
-    definition: @sql concat({{ country_code }}, ' hello');;
+  } 
+  measure measure_ {
+    label: "Measure"
+    type: "number"
+    definition: @sql count({{ country_code }});;
+    description: "ahihi"
   }
 }
