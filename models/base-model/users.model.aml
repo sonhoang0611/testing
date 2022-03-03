@@ -31,7 +31,7 @@ Model users {
   dimension city_id {
     label: 'City Id'
     type: 'number'
-    hidden: false
+    hidden: true
     definition: @sql {{ #SOURCE.city_id }};;
   }
   dimension first_name {
