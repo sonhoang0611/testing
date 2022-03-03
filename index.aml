@@ -1,8 +1,9 @@
 
 // BEGIN AUTO-IMPORTED OBJECTS
-import './tuan/tuan_nguyen_db/datasets/Tuan /map.dataset.aml' {
-  map as tuan_map
-}
+import './tuan/tuan_nguyen_db/datasets/Tuan /map.dataset.aml' { map }
+//  {
+//   map as tuan_map
+// }
 
 // END AUTO-IMPORTED OBJECTS
 
