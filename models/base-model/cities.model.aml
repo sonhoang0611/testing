@@ -28,6 +28,7 @@ Model cities {
   measure measure_ {
     label: "Measure"
     type: "number"
+    hidden: true
     definition: @sql count({{ country_code }});;
     description: "ahihi"
   }
